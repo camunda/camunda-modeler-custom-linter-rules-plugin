@@ -1,4 +1,4 @@
-# Camunda Modeler Custom Linter Rules Example Plugin
+# Custom Linter Rules Example Plugin
 
 [![Compatible with Camunda Modeler version 3.3](https://img.shields.io/badge/Camunda%20Modeler-3.3+-blue.svg)](https://github.com/camunda/camunda-modeler)
 
