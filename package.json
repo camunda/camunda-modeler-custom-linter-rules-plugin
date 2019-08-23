@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/camunda/camunda-modeler-custom-linter-rules-plugin.git",
+    "url": "git+https://github.com/camunda/camunda-modeler-custom-linter-rules-plugin.git"
   },
   "keywords": [
     "camunda",
@@ -21,12 +21,12 @@
   "author": "Nico Rehwaldt",
   "license": "MIT",
   "devDependencies": {
+    "bpmnlint": "^6.1.0",
+    "bpmnlint-loader": "^0.1.4",
+    "bpmnlint-plugin-custom": "file:bpmnlint-plugin-custom",
     "camunda-modeler-plugin-helpers": "^3.0.0",
     "npm-run-all": "^4.1.5",
     "webpack": "^4.28.1",
-    "webpack-cli": "^3.2.1",
-    "bpmnlint": "^6.0.0",
-    "bpmnlint-loader": "^0.1.4",
-    "bpmnlint-plugin-custom": "file:bpmnlint-plugin-custom"
+    "webpack-cli": "^3.2.1"
   }
 }
