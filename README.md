@@ -17,7 +17,7 @@ Checkout the [bpmnlint documentation](https://github.com/bpmn-io/bpmnlint#config
 This project ships with a [bpmnlint extension](./bpmnlint-plugin-custom) with the `custom` namespace. Namespaces are defined by suffixing `bpmnlint-plugin-{name of choice}` in the _importing_ Node module. 
  Our custom namespace `{name of choice}` can then be referenced in our `.bpmnlintrc` like this: 
  
- ```yaml
+ ```javascript
 {
   "extends": [
      "bpmnlint:recommended",
