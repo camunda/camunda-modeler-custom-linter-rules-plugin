@@ -14,26 +14,34 @@ Checkout the [bpmnlint documentation](https://github.com/bpmn-io/bpmnlint#config
 
 ## Creating Rules
 
-This project ships with a [bpmnlint extension](./bpmnlint-plugin-custom) with the `custom` namespace. Namespaces are defined by suffixing `bpmnlint-plugin-{name of choice}` in the _importing_ Node module. 
- Our custom namespace `{name of choice}` can then be referenced in our `.bpmnlintrc` like this: 
- 
+This project ships with a [bpmnlint extension](./bpmnlint-plugin-custom) with the `custom` namespace. 
+
+Add or edit rules in the [extension's `rules` directory](./bpmnlint-plugin-custom/rules). 
+
+In order to use the rules (or provided configurations), activate them via the local [`.bpmnlintrc` file](.bpmnlintrc), prefixed with the namespace: 
+
  ```javascript
 {
   "extends": [
      "bpmnlint:recommended",
-     "plugin:{name of choice}/recommended"
+     "plugin:custom/recommended"
   ],
   "rules": {
-    "{name of choice}/no-manual-task": "warn"
+    "custom/no-manual-task": "warn",
+    "custom/your-other-rule": "error"
   }
 }
 ```
 
-In this case `recommended` is one of our configuration names, exported in the [index file of our `rules` extension](/bpmnlint-plugin-custom/index.js), but is of course also customizable.
-Since rule sets are exported via their string declaration, changing the severity level of rules in `.bpmnlintrc` has to reference those same string identifiers.
+## Plug-in Discovery
 
+The `custom` namespace used by the shipped [bpmnlint extension](./bpmnlint-plugin-custom) is arbitrary, i.e. can be changed freely. However you'd need to take into account how the linting infrastructure discovers rules and configuration:
 
-Add or edit rules in the [extension's `rules` directory](./bpmnlint-plugin-custom/rules).
+* Given a namespace `{FOO}`, it searches for a library `bpmnlint-plugin-{FOO}` in the NodeJS search path (usually `node_modules` folder)
+* It searches the `rules` folder for a file matching an activated rule name
+* It searches the `config` folder for a file matching a configured configuration or inspect the plug-ins default export
+
+In the case of our custom plug-in `custom/recommended` reference the `custom` configuration, exported by our [plug-ins entry point](/bpmnlint-plugin-custom/index.js). The rule `custom/no-manual-task` on the other hand references [plug-ins entry point](/bpmnlint-plugin-custom/index.js).
 
 
 ## Bundling
