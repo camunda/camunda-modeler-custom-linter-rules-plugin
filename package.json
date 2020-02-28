@@ -21,7 +21,7 @@
   "author": "Nico Rehwaldt",
   "license": "MIT",
   "devDependencies": {
-    "bpmnlint": "^6.1.0",
+    "bpmnlint": "^6.3.0",
     "bpmnlint-loader": "^0.1.4",
     "bpmnlint-plugin-custom": "file:bpmnlint-plugin-custom",
     "camunda-modeler-plugin-helpers": "^3.0.0",
