@@ -5,6 +5,23 @@
   ],
   "rules": {
     "label-required": "off",
-    "custom/no-manual-task": "warn"
+    "custom/label-required": "error",
+    
+    "no-inclusive-gateway": "off",
+    "conditional-flows": "off",
+    "custom/conditional-flows-except-inclusive": "error",
+    
+    "custom/english-only": "error",
+    
+    "custom/call-activity-binding-latest": "error",
+    "custom/call-activity-business-key": "error",
+    
+    "custom/listeners": "warn",
+    
+    "custom/has-outgoing": "warn",
+    
+    "custom/async-exclusive": "warn",
+    
+    "custom/no-manual-task": "error"   
   }
 }
