@@ -1,13 +1,5 @@
-import {
-  registerBpmnJSPlugin
-} from 'camunda-modeler-plugin-helpers';
+import { registerClientPlugin } from 'camunda-modeler-plugin-helpers';
 
-import customLinterConfig from '../.bpmnlintrc';
+import { config, resolver } from '../.bpmnlintrc';
 
-registerBpmnJSPlugin({
-  __init__: [
-    function(linting) {
-      linting.setLinterConfig(customLinterConfig);
-    }
-  ]
-});
+registerClientPlugin({ config, resolver }, 'lintRules.cloud-bpmn');
