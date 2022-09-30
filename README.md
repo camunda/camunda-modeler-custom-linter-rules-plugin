@@ -1,8 +1,12 @@
+> This plug-in contributes linter rules to the built-in validation shipped with [Camunda Modeler v5.3+](https://github.com/camunda/camunda-modeler/blob/develop/CHANGELOG.md#530). 
+>
+> Checkout legacy integration into older modeler versions on the [`camunda-modeler-5-2` branch](https://github.com/camunda/camunda-modeler-custom-linter-rules-plugin/tree/camunda-modeler-5-2).
+
 # Custom Linter Rules Example Plugin
 
-[![Compatible with Camunda Modeler version 3.3](https://img.shields.io/badge/Camunda%20Modeler-3.3+-blue.svg)](https://github.com/camunda/camunda-modeler)
+[![Compatible with Camunda Modeler version 5.3+](https://img.shields.io/badge/Camunda%20Modeler-5.3+-blue.svg)](https://github.com/camunda/camunda-modeler)
 
-This plug-in allows you to provide your custom lint rules to the [Camunda Modeler Linter Plug-in](https://github.com/bpmn-io/camunda-modeler-linter-plugin).
+This plug-in provides custom lint rules to the built-in Camunda Modeler linting feature. Fork it to suite your needs.
 
 
 ## Configuring Rules
@@ -72,7 +76,7 @@ npm run dev
 
 ## Additional Resources
 
-* [Linter Plug-in](https://github.com/camunda/camunda-modeler-linter-plugin)
+* [Camunda Modeler](https://github.com/camunda/camunda-modeler)
 * [bpmnlint](https://github.com/bpmn-io/bpmnlint)
 
 
