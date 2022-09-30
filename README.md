@@ -37,6 +37,7 @@ In order to use the rules (or provided configurations), activate them via the lo
 }
 ```
 
+
 ## Plug-in Discovery
 
 The `custom` namespace used by the shipped [bpmnlint extension](./bpmnlint-plugin-custom) is arbitrary, i.e. can be changed freely. However you'd need to take into account how the linting infrastructure discovers rules and configuration:
