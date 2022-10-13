@@ -6,7 +6,7 @@
 
 [![Compatible with Camunda Modeler version 5.3+](https://img.shields.io/badge/Camunda%20Modeler-5.3+-blue.svg)](https://github.com/camunda/camunda-modeler)
 
-This plug-in provides custom lint rules to the built-in Camunda Modeler linting feature. Fork it to suite your needs.
+This plug-in provides custom lint rules to the built-in Camunda Modeler linting feature. Fork it to suit your needs.
 
 
 ## Configuring Rules
