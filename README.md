@@ -42,7 +42,24 @@ In order to use the rules (or provided configurations), activate them via the lo
 
 The `custom` namespace used by the shipped [bpmnlint extension](./bpmnlint-plugin-custom) is arbitrary, i.e. can be changed freely. However you'd need to take into account how the linting infrastructure discovers rules and configuration:
 
-* Given a namespace `{FOO}`, it searches for a library `bpmnlint-plugin-{FOO}` in the NodeJS search path (usually `node_modules` folder)
+* Given a namespace `{FOO}`, it searches for a library `bpmnlint-plugin-{FOO}` in the NodeJS search path (usually `node_modules` folder. 
+
+    *Note - that when using plugin namespaces within `.bpmnlintrc` you exlude the `bpmnlint-plugin-` prefix from the name. Example usiting `using bpmnlint-plugin-foo` namespace*
+
+    ```javascript
+    {
+      "extends": [
+        "bpmnlint:recommended",
+        "plugin:foo/recommended"
+        "plugin:@yourscope/foo/recommended" // for a scoped npm package
+      ],
+      "rules": {
+        "foo/no-manual-task": "warn", 
+        "@yourscope/foo/your-other-rule": "error" //for a scoped npm package
+      }
+    }
+
+    ```
 * It searches the `rules` folder for a file matching an activated rule name
 * It searches the `config` folder for a file matching a configured configuration or inspect the plug-ins default export
 
