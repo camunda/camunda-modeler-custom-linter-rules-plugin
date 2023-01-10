@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "all": "run-s build",
-    "build": "webpack -c",
+    "build": "webpack",
     "dev": "webpack -w"
   },
   "repository": {
