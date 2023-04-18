@@ -9,6 +9,8 @@
 This plug-in provides custom lint rules to the built-in [Camunda Modeler](https://github.com/camunda/camunda-modeler) linting feature. Fork it to suit your needs.
 
 
+![](./docs/screenshot.png)
+
 ## Configuring Rules
 
 Use the local [`.bpmnlintrc` file](.bpmnlintrc) to configure active lint rules.
