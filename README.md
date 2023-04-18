@@ -6,10 +6,10 @@
 
 [![Compatible with Camunda Modeler version 5.4 and newer](https://img.shields.io/badge/Camunda%20Modeler->=5.4-blue.svg)](https://github.com/camunda/camunda-modeler)
 
-This plug-in provides custom lint rules to the built-in [Camunda Modeler](https://github.com/camunda/camunda-modeler) linting feature. Fork it to suit your needs.
+This plug-in adds the [bpmnlint recommended rules](https://github.com/bpmn-io/bpmnlint) as well as [custom made rules](#creating-rules) to the [Camunda Desktop Modeler](https://github.com/camunda/camunda-modeler). Fork it to suit your needs.
 
+![Custom Linter rules in action in the Modeler](./docs/screenshot.png)
 
-![](./docs/screenshot.png)
 
 ## Configuring Rules
 
