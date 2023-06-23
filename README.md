@@ -49,25 +49,20 @@ The `custom` namespace used by the shipped [bpmnlint extension](./bpmnlint-plugi
 
 In the case of our custom plug-in `custom/recommended` reference the `custom` configuration, exported by our [plug-ins entry point](/bpmnlint-plugin-custom/index.js). The rule `custom/no-manual-task` on the other hand references [plug-ins entry point](/bpmnlint-plugin-custom/index.js).
 
-## Bundling
-
-Setup the project:
+## Development
 
 ```sh
+# initial setup
 npm install
-```
 
-Build the plug-in:
+# rebuild in development mode
+npm run dev
 
-```sh
+# build the plug-in
 npm run all
 ```
 
-Continuously rebuild in development mode:
-
-```sh
-npm run dev
-```
+To integrate with the Camunda Desktop Modeler move or link this plug-in into a folder under `resources/plugins` within the Modeler's [plug-in search path](https://docs.camunda.io/docs/components/modeler/desktop-modeler/plugins/#plugging-into-camunda-modeler). Reload the modeler to recognize plug-in changes.
 
 ## Before you Publish
 
