@@ -74,6 +74,7 @@ To integrate with the Camunda Desktop Modeler move or link this plug-in into a f
 ## Additional Resources
 
 * [Camunda Modeler](https://github.com/camunda/camunda-modeler)
+* [List of Plug-ins](https://github.com/camunda/camunda-modeler-plugins)
 * [Plug-ins documentation](https://docs.camunda.io/docs/components/modeler/desktop-modeler/plugins/#plugging-into-camunda-modeler)
 * [bpmnlint](https://github.com/bpmn-io/bpmnlint)
 
