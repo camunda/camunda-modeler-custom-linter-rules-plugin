@@ -2,5 +2,5 @@
 
 module.exports = {
   name: 'Linter - Custom Rules',
-  script: './dist/client.js'
+  script: './client/client.bundle.js'
 };
