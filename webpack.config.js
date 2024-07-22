@@ -4,8 +4,8 @@ module.exports = {
   mode: 'development',
   entry: './client/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'client.js'
+    path: path.resolve(__dirname, 'client'),
+    filename: 'client.bundle.js'
   },
   module: {
     rules: [
