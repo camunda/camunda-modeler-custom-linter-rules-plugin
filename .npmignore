@@ -1,2 +1,3 @@
 client
 webpack.config.js
+client/client.bundle.js.map
